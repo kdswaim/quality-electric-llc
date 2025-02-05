@@ -5,7 +5,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        serif: [
+          "Quattrocento"
+        ],
         sans: [
+          "Belleza",
           "Bricolage Grotesque Variable",
           "Inter Variable",
           "Inter",

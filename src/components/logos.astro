@@ -1,18 +1,19 @@
 ---
 // @ts-ignore
-import { Icon } from "astro-icon/components";
+import "@assets/IBEW.png";
+import { Image } from "astro:assets";
+import myImage from "../assets/IBEW725.png";
+import myLogo from "../assets/Dealer-2.png";
+import myOtherLogo from "../assets/6d9f9d_a94f8d464323432ab452289a9597fc11~mv2.gif";
 ---
 
-<div class="mt-24">
-  <h2 class="text-center text-slate-500">Works with your technologies</h2>
-  <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
-
-    <Icon class="size-8 md:size-12" name="simple-icons:react" />
-    <Icon class="size-8 md:size-12" name="simple-icons:svelte" />
-    <Icon class="size-8 md:size-12" name="simple-icons:astro" />
-    <Icon class="size-8 md:size-16" name="simple-icons:tailwindcss" />
-    <Icon class="size-8 md:size-16" name="simple-icons:alpinedotjs" />
-    <Icon class="size-8 md:size-12" name="simple-icons:vercel" />
-
+<div class="mt-24 text-center">
+  <h2 class="text-center text-slate-500 mx-auto max-w-3xl">
+    Quality Electric of Indiana LLC is proud to offer the best electrical professionals with the best training. While we are not official representatives of these brands, we strive to promote the standards and spirit of industry-leading organizations and respected businesses.
+  </h2>
+  <div class="flex flex-wrap justify-center items-center gap-8 md:gap-20 mt-10 w-full">
+    <Image src={myImage} alt="IBEW Local 725" width={250} />
+    <Image src={myOtherLogo} alt="Certified Authorized Dealer" width={200} />
   </div>
 </div>
+

@@ -1,0 +1,17 @@
+---
+import Contactform from "@components/contactform.astro";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+<Layout title="Leave A Review">
+    <Container>
+      <Sectionhead>
+        <Fragment slot="title">★★ Leave a Review ★★</Fragment>
+        <Fragment slot="desc">We're glad you chose Quality. Let us know how we did so we can keep what works and improve what doesn't.</Fragment>
+      </Sectionhead>
+  
+      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+
+<Contactform />
+</div>

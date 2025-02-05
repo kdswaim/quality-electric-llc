@@ -4,8 +4,49 @@ import heroImage from "assets/hero.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 ---
+<section
+  class="relative bg-[url(https://1drv.ms/i/s!AoM7TSrp7nnmli_glI5GTvnbzAax?embed=1&width=6000&height=4000)] bg-cover bg-center bg-no-repeat w-full md:grayscale hover:grayscale-0"
+>
+  <div
+    class="absolute inset-0 bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
+  ></div>
 
-<main
+  <div
+    class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+  >
+    <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right rounded-xl bg-black p-4 bg-opacity-50">
+      <h1 class="text-3xl font-extrabold font-serif text-white sm:text-5xl drop-shadow-lg">
+        Need an
+
+        <strong class="block font-extrabold text-amber-400 text-center"> Electrician? </strong>
+      </h1>
+
+      <p class="mt-4 text-left drop-shadow-sm max-w-lg text-white sm:text-xl/relaxed">
+        We know some Quality professionals who would be perfect for the job.
+        They have nearly 60 years of industry experience, and while their courtesy and dedication could be called "old-fashioned", that means they will go above and beyond to address all your home's modern electrical needs.
+        <br/>Choose us for your next electrical project and see why all our longtime customers refuse to settle for anything less than Quality.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4 text-center justify-center">
+        <a
+          href="tel:8128728376"
+          class="block w-full rounded bg-amber-500 px-12 py-3 text-md font-medium text-white shadow hover:bg-amber-700 focus:outline-none focus:ring active:bg-amber-400 sm:w-auto"
+        >
+          Call Now
+        </a>
+
+        <a
+          href="/about"
+          class="block w-full rounded bg-white px-12 py-3 text-md font-medium text-amber-600 shadow hover:text-yellow-700 focus:outline-none focus:ring active:text-amber-500 sm:w-auto"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
@@ -50,4 +91,4 @@ import { Icon } from "astro-icon/components";
       </Link>
     </div>
   </div>
-</main>
+</main> -->

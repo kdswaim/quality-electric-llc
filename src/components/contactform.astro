@@ -2,27 +2,38 @@
 import Button from "./ui/button.astro";
 ---
 
-<!-- To make this contact form work, create your free access key from https://web3forms.com/
-     Then you will get all form submissions in your email inbox. -->
 <form
   action="https://api.web3forms.com/submit"
   method="POST"
   id="form"
   class="needs-validation"
   novalidate>
-  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-  <!-- Create your free access key from https://web3forms.com/ -->
+  <input type="hidden" name="access_key" value="993f6c90-ee6a-4715-8141-58c4df3e5a54" />
   <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
   <div class="mb-5">
     <input
       type="text"
       placeholder="Full Name"
       required
-      class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-500 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
       name="name"
     />
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
       Please provide your full name.
+    </div>
+  </div>
+  <div class="mb-5">
+    <label for="job_address" class="sr-only">Address of Service</label>
+    <input
+      id="job_address"
+      type="text"
+      placeholder="Service location (our use only - we don't advertise or sell your private information)"
+      name="job_address"
+      required
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-500 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+    />
+    <div class="empty-feedback text-red-400 text-sm mt-1">
+      Please provide the job address.
     </div>
   </div>
   <div class="mb-5">
@@ -32,7 +43,7 @@ import Button from "./ui/button.astro";
       placeholder="Email Address"
       name="email"
       required
-      class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-500 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
     />
     <div class="empty-feedback text-red-400 text-sm mt-1">
       Please provide your email address.
@@ -41,18 +52,37 @@ import Button from "./ui/button.astro";
       Please provide a valid email address.
     </div>
   </div>
+  <div class="mb-5">
+    <label for="service_rating" class="sr-only">Service Rating</label>
+    <select
+      id="service_rating"
+      name="service_rating"
+      required
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-500 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+    >
+      <option value="" disabled selected>Select a rating</option>
+      <option value="1">⭐ - 1 Star</option>
+      <option value="2">⭐⭐ - 2 Stars</option>
+      <option value="3">⭐⭐⭐ - 3 Stars</option>
+      <option value="4">⭐⭐⭐⭐ - 4 Stars</option>
+      <option value="5">⭐⭐⭐⭐⭐ - 5 Stars</option>
+    </select>
+    <div class="empty-feedback text-red-400 text-sm mt-1">
+      Please select a rating.
+    </div>
+</div>
   <div class="mb-3">
     <textarea
       name="message"
       required
-      placeholder="Your Message"
-      class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+      placeholder="Tell us briefly about your experience and it may be featured on our website or social media posts."
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-500 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
     ></textarea>
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
       Please enter your message.
     </div>
   </div>
-  <Button type="submit" size="lg" block>Send Message</Button>
+  <Button type="submit" size="lg" block>Leave Your Review</Button>
   <div id="result" class="mt-3 text-center"></div>
 </form>
 

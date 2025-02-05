@@ -1,17 +1,31 @@
 ---
 import Link from "./ui/link.astro";
+import { Image } from "astro:assets";
+import myImage from "../assets/QE 2 Years.png";
 ---
 
 <div
-  class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
+  class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-3xl flex flex-col items-center text-center shadow-md">
   <h2 class="text-white text-4xl md:text-6xl tracking-tight">
-    Build faster websites.
-  </h2>
-  <p class="text-slate-400 mt-4 text-lg md:text-xl">
-    Pull content from anywhere and serve it fast with Astro's next-gen island
-    architecture.
+    ★ 24/7 Service Calls ★ </h2>
+    <h3 class="text-slate-300 text-3xl md:text-5xl tracking-tight">
+    ★ Free Estimates ★
+  </h3>
+  <h3 class="text-slate-400 text-2xl md:text-4xl tracking-tight">
+    ★ Fast & Courteous ★
+  </h3>
+  <Image src={myImage} alt="IBEW Local 725" width={900} class="pt-8" />
+  <p class="text-slate-400 mt-4 text-lg md:text-xl pb-8">
+    We hope we've made a good impression and that you'll consider us for your next job. 
   </p>
+  
   <div class="flex mt-5">
-    <Link href="#" style="inverted">Get Started</Link>
+    <Link href="tel:8128728376" style="inverted" class="cta uppercase text-2xl font-serif font-semibold hover:text-white">Call Us</Link>
   </div>
 </div>
+
+<style>
+  .cta {
+    background-color: #ffc107;
+  }
+</style>

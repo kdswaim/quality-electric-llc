@@ -4,64 +4,81 @@ import { Icon } from "astro-icon/components";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "New Construction",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Building a new home? Rough In right with our skilled electricians to avoid headaches and costly fixes down the road.",
+    icon: "mdi:house-flash",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Residential Rewiring",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "We are happy to help local homeowners bring their homes up to code to ensure your family stays safe & comfortable.",
+    icon: "mdi:power-socket-us",
   },
   {
-    title: "On-Demand Components",
+    title: "Fixture Repair & Install",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
+      "You picked out the perfect lights to completement your house - call a pro to install or repair so you can enjoy them.",
+    icon: "mdi:ceiling-light",
   },
   {
-    title: "Broad Integration",
+    title: "Service Upgrades",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "Don't touch that breaker box! If you need to upgrade your power, we've got the knowledge and tools to get it done right.",
+    icon: "mdi:amp",
   },
   {
-    title: "SEO Enabled",
+    title: "Electrical Inspections",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
+      "Improper grounding, outdated panels, and outlet-overloading can be a waiting disaster - let us check your home for these and other issues.",
+    icon: "mdi:clipboard-check-outline",
   },
   {
-    title: "Community",
+    title: "Exterior & Landscape",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "We're handy outside, too! Call us and we'll make your exterior twinkle and your back patio come to life.",
+    icon: "mdi:carriage-light",
+  },
+  {
+    title: "Generator Installation",
+    description:
+      "We handle generator installation so backup power is ready when you need it. Haven't bought one yet? We can connect you with trusted brands.",
+    icon: "mdi:generator-portable",
+  },
+  {
+    title: "FREE Estimates",
+    description:
+      "Pay for electrical work, not for guesswork. Free estimates and excellent customer service just makes sense.",
+    icon: "mdi:money-off",
+  },
+  {
+    title: "24-Hour Service",
+    description:
+      "Emergencies can't wait, so neither do we. Choose us for your next electrical job and skilled & courteous help will always be a phonecall away.",
+    icon: "mdi:clockwise",
   },
 ];
 ---
 
-<div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
+<div class="mt-16 md:mt-0 pt-8">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight font-serif">
+    One Call - We Do It All <span class="text-amber-500">⚡︎</span>
   </h2>
   <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
+    We are proud to be your hometown electricians. Anyone could have your business now, but we want your business for life. The difference between work and workmanship is care, and we demonstrate that with every project. Big or small, we'll handle it all - and with 24/7, 7-day-a-week service calls, you don't have to pay extra for peace of mind.
   </p>
 </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16 pb-8">
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+        <div class="mt-1 bg-amber-500 rounded-full  p-2 w-8 h-8 shrink-0">
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
           <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+          <p class="text-slate-600 mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>
     ))

@@ -4,8 +4,8 @@ import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import "@fontsource-variable/inter/index.css";
 import '@fontsource-variable/bricolage-grotesque';
-
-
+import "@fontsource/belleza";
+import "@fontsource/quattrocento";
 
 export interface Props {
   title: string;
@@ -21,7 +21,7 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
+  ? title + " | " + "Quality Electric of Indiana LLC"
   : "Astroship - Starter Template for Astro with Tailwind CSS";
 ---
 
@@ -30,31 +30,29 @@ const makeTitle = title
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/qualicon.png" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description="Quality Electric of Indiana LLC is your Terre Haute electrician of choice, providing standards-setting residential & commercial electrical services in Terre Haute and around the Wabash Valley since 2022."
       canonical={canonicalURL}
-      twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
-        card: "summary_large_image",
-      }}
+      
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `Quality Electric of Indiana LLC - Your Terre Haute Electrician`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Quality Electric of Indiana LLC Homepage Screenshot",
         },
       }}
     />
+<meta property="instagram:site" content="@qualityelectric.indiana" />
+<meta property="tiktok:site" content="@quality.electric.indiana" />
   </head>
   <body>
     <Navbar />
@@ -64,7 +62,7 @@ const makeTitle = title
       /* Improve Page speed */
       /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
       img {
-        content-visibility: auto;
+        content-visibility:auto;
       }
     </style>
   </body>
