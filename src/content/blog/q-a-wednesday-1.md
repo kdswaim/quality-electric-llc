@@ -1,7 +1,7 @@
 ---
 draft: false
-title: "Q&A Wednesday: Jan. 29, 2025"
-snippet: "Flickering lights can happen for several reasons, like loose wires, a faulty switch, or a bad bulb. ."
+title: "Q&A Wednesday #1
+snippet: "Flickering lights can happen for several reasons, like loose wires, a faulty switch, or a bad bulb..."
 image: {
     src: "https://1drv.ms/i/s!AoM7TSrp7nnmlj8ZiAyHrQAaZTi_?embed=1&width=640&height=428",
     alt: "Power Outlet and electrical plug close-up."
