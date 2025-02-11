@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Q&A Wednesday: Flickering Lights, Can We Fix It (No You Shouldn't), and GFC-what?"
+title: "Q&A Wednesday: Jan. 29, 2025"
 snippet: "Flickering lights can happen for several reasons, like loose wires, a faulty switch, or a bad bulb. ."
 image: {
     src: "https://1drv.ms/i/s!AoM7TSrp7nnmlj8ZiAyHrQAaZTi_?embed=1&width=640&height=428",
@@ -17,7 +17,7 @@ tags: [interesting, common problems, DIY]
       </figcaption>
 
 
-# Q&A WEDNESDAY💡
+# Q&A WEDNESDAY: Flickering Lights, Can We Fix It (No You Shouldn't), and GFC-what?💡
 ## ⚡Why Do My Lights Flicker Sometimes? ⚡
 Flickering lights can happen for several reasons, like loose wires, a faulty switch, or a bad bulb. It might also be caused by voltage changes from big appliances or problems with the power supply. In some cases, it could be an issue in your electrical panel or circuit. It’s a good idea to have an electrician check it out to make sure everything is working safely and properly.
 ## ⚡Can I "DIY" an Electrical Project? ⚡
