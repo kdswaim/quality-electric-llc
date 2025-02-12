@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Mike McCarty"
-title: "Electrician"
+title: "Journeyman Wireman"
 avatar: {
     src: "https://1drv.ms/i/s!AoM7TSrp7nnmlja8__CK_LaAjmBj?embed=1&width=660",
     alt: "Mike McCarty"
