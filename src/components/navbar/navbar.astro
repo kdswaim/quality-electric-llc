@@ -3,6 +3,7 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import { Icon } from 'astro-icon/components';
 
 const menuitems = [
   // {
@@ -92,8 +93,27 @@ const menuitems = [
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <Link href="tel:8128728376" size="md">Call Now</Link>
-      </div>
+        <a href="https://m.facebook.com/people/Quality-Electric-of-Indiana-LLC/61565710887751/" target="_blank">
+          <Icon id="socials" name="simple-icons:facebook" /></a>
+        <a href="https://www.instagram.com/qualityelectric.indiana/" target="_blank"><Icon id="socials" name="simple-icons:instagram" /></a>
+        <a href="https://www.tiktok.com/@quality.electric.indiana" target="_blank"><Icon id="socials" name="simple-icons:tiktok" /></a>
+      <Link href="tel:8128728376" size="md" id="call">Call Now</Link>
+    </div>
     </div>
   </header>
 </Container>
+
+<style>
+  #call {
+    background-color: #f0b70e;
+    /* backdrop-filter: contrast(200); */
+  }
+
+  #call:hover {
+    font-size:large;
+  }
+
+  #socials:hover{
+    color: #f0b70e;
+  }
+</style>
