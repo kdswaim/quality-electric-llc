@@ -8,6 +8,6 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astroship.web3templates.com",
+  site: "https://qualityelectricofindiana.com",
   integrations: [tailwind(), mdx(), sitemap(), icon(), partytown()],
 });
