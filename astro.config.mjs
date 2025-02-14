@@ -9,5 +9,8 @@ import partytown from "@astrojs/partytown";
 // https://astro.build/config
 export default defineConfig({
   site: "https://qualityelectricofindiana.com",
-  integrations: [tailwind(), mdx(), sitemap(), icon(), partytown()],
+  integrations: [tailwind(), mdx(), sitemap(
+    {
+xslURL: 'sitemap.xsl'
+    }), icon(), partytown()],
 });
