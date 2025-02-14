@@ -6,11 +6,10 @@ module.exports = {
     extend: {
       fontFamily: {
         serif: [
-          "Quattrocento"
+          "Quattrocento", 
         ],
         sans: [
           "Belleza",
-          "Bricolage Grotesque Variable",
           "Inter Variable",
           "Inter",
           ...defaultTheme.fontFamily.sans,
