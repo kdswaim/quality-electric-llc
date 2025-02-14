@@ -1,8 +1,13 @@
+---
+import Image from "astro/components/Image.astro";
+import logoImage from "@assets/Electric.png";
+---
+
 <footer class="bg-white">
   <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-8 sm:px-6 lg:space-y-16 lg:px-8">
     <div class="sm:flex sm:items-center sm:justify-between">
-      <div class="">
-        <img src="/Logos/Electric.png" class="w-40 drop-shadow-sm" alt="Quality Electric of Indiana LLC">
+      <div class="logo">
+        <Image src={logoImage} class="w-40 drop-shadow-sm" alt="Quality Electric of Indiana LLC">
       </div>
 
       <ul class="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
@@ -64,7 +69,7 @@
                       <div class="rounded-lg overflow-hidden">
                           <iframe
                               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.3412139004813!2d-87.36173992336974!3d39.50678797160035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886d6f0d0c4b7d15%3A0x6cc6999bde4fc2d3!2s3601%20N%20Fruitridge%20Ave%2C%20Terre%20Haute%2C%20IN%2047805!5e0!3m2!1sen!2sus!4v1738680092122!5m2!1sen!2sus"
-                              width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                              width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy" title="Embedded Map - Quality Electric of Indiana LLC location on 3601 N. Fruitridge Avenue"></iframe>
                       </div>
                       <div>
                           <div class="max-w-full mx-auto rounded-lg overflow-hidden">
@@ -85,21 +90,22 @@
                               </div>
                               <div class="border-t border-gray-200 px-6 py-4">
                                 <h3 class="text-lg font-medium text-gray-900 font-serif underline">Local Resources</h3>
-                                <a href="https://www.ibew725.org/" target="_blank" class="mt-1 text-amber-500">IBEW Local 725</a>
-                                <a href="https://thejatc.org/" target="_blank" class="mt-1 text-amber-500 block">Terre Haute Electrical JATC</a>
-                                <a href="https://www.terrehaute.in.gov/departments/fire-department/safety/document.2009-04-01.5784199130" target="_blank" class="mt-1 text-amber-500 block">THFD Safety Tips</a>
-                                <a href="https://www.ibew.org/IBEW-COE" target="_blank" class="mt-1 text-amber-500 block">IBEW Code of Excellence</a>
-                                <a href="https://www.wicaa.org/energy-assistance/" target="_blank" class="mt-1 text-amber-500 block">WICAA - Energy Assistance</a>
-                                <a href="https://www.in.gov/ihcda/homeowners-and-renters/low-income-home-energy-assistance-program-liheap/" target="_blank" class="mt-1 text-amber-500 block">IHCDA - Energy Assistance Program (EAP)</a>
+                                <a href="https://www.ibew725.org/" target="_blank" class="mt-1 text-amber-500" aria-label="Link - International Brotherhood of Electrical Workers Local 725">IBEW Local 725</a>
+                                <a href="https://thejatc.org/" target="_blank" class="mt-1 text-amber-500 block" aria-label="Link - NJATC">Terre Haute Electrical JATC</a>
+                                <a href="https://www.terrehaute.in.gov/departments/fire-department/safety/document.2009-04-01.5784199130" target="_blank" class="mt-1 text-amber-500 block" aria-label="Link - Terre Haute Fire Department">THFD Safety Tips</a>
+                                <a href="https://www.ibew.org/IBEW-COE" target="_blank" class="mt-1 text-amber-500 block" aria-label="Link - IBEW Code of Excellence">IBEW Code of Excellence</a>
+                                <a href="https://www.wicaa.org/energy-assistance/" target="_blank" class="mt-1 text-amber-500 block" aria-label="Link - Financial Assistance for Energy">WICAA - Energy Assistance</a>
+                                <a href="https://www.in.gov/ihcda/homeowners-and-renters/low-income-home-energy-assistance-program-liheap/" target="_blank" class="mt-1 text-amber-500 block" aria-label="Link - Financial Assistance for Energy">IHCDA - Energy Assistance Program (EAP)</a>
                             </div>
                           </div>
                       </div>
                   </div>
               </div>
           </div>
-
+<section title="copyright">
     <p class="text-center text-sm text-slate-500">
       Copyright © {new Date().getFullYear()} Quality Electric of Indiana LLC. ⚡︎ All rights reserved.
     </p></p>
+  </section>
   </div>
 </footer>

@@ -4,6 +4,8 @@ import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import { Icon } from 'astro-icon/components';
+import Image from "astro/components/Image.astro";
+import logoImage from "@assets/Electric.png";
 
 const menuitems = [
   // {
@@ -45,11 +47,12 @@ const menuitems = [
 ---
 
 <Container>
-  <header class="flex flex-col lg:flex-row justify-between items-center my-5">
+  <header aria-label="Navigation - Quality Electric" class="flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800"><img src="/Logos/Electric.png" class="w-32 drop-shadow-sm" alt="Quality Electric of Indiana LLC">
+        <a aria-label="Quality Electric of Indiana LLC" href="/" class="text-lg"
+          >
+          <Image src={logoImage} class="w-32 drop-shadow-sm" loading="eager" alt="Quality Electric of Indiana LLC">
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
@@ -93,11 +96,11 @@ const menuitems = [
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <a href="https://m.facebook.com/people/Quality-Electric-of-Indiana-LLC/61565710887751/" target="_blank">
+        <a aria-label="Facebook" href="https://m.facebook.com/people/Quality-Electric-of-Indiana-LLC/61565710887751/" target="_blank">
           <Icon id="socials" name="simple-icons:facebook" /></a>
-        <a href="https://www.instagram.com/qualityelectric.indiana/" target="_blank"><Icon id="socials" name="simple-icons:instagram" /></a>
-        <a href="https://www.tiktok.com/@quality.electric.indiana" target="_blank"><Icon id="socials" name="simple-icons:tiktok" /></a>
-      <Link href="tel:8128728376" size="md" id="call">Call Now</Link>
+        <a aria-label="Instagram" href="https://www.instagram.com/qualityelectric.indiana/" target="_blank"><Icon id="socials" name="simple-icons:instagram" /></a>
+        <a aria-label="Tiktok" href="https://www.tiktok.com/@quality.electric.indiana" target="_blank"><Icon id="socials" name="simple-icons:tiktok" /></a>
+      <Link aria-label="Call Us" href="tel:8128728376" size="md" id="call">Call Now</Link>
     </div>
     </div>
   </header>

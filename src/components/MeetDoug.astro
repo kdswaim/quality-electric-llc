@@ -1,3 +1,7 @@
+---
+import Image from "astro/components/Image.astro";
+import dougImage from "@assets/Doug2.jpg";
+---
 <section class="bg-gray-100">
     <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
@@ -11,14 +15,16 @@
                     <br/>
                     Need expert electrical service from someone who truly cares? Doug is ready to help—day or night.</p>
                 <div class="mt-8">
-                    <a href="#" class="text-amber-500 hover:text-amber-600 font-medium">Learn More
+                    <a href="/about" class="text-amber-500 hover:text-amber-600 font-medium">Learn More
                         <span class="ml-2">&#8594;</span></a>
                 </div>
             </div>
             <div class="mt-12 md:mt-0">
-                <img src="https://1drv.ms/i/s!AoM7TSrp7nnmljCpZVMIPWIhlw2M?embed=1&height=1024" alt="About Us Image" class="object-cover rounded-lg shadow-md">
-            <figcaption>Doug Wilkins, Journeyman Electric/Manager</figcaption>
-            </div>
+                <figure>
+                <Image src={dougImage} loading="lazy" alt="Doug Wilkins, Journeyman Wireman/Manager" class="object-cover rounded-lg shadow-md"/>
+            <figcaption class="pt-4 text-slate-500">Doug Wilkins, Journeyman Wireman/Manager</figcaption>
+        </figure>
+    </div>
         </div>
     </div>
 </section>

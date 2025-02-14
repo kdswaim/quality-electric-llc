@@ -9,6 +9,8 @@ import Cta from "@components/cta.astro";
 import Gallery from "@components/gallery.astro";
 import Logos from "@components/logos.astro";
 import Social from "@components/social.astro";
+import Image from "astro/components/Image.astro";
+import aboutImage from "@assets/4_QE.jpg";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -24,9 +26,9 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
     </Sectionhead>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <img src="https://1drv.ms/i/s!AoM7TSrp7nnmjHeYin_uKNChAy_W?embed=1&width=1024" alt="About Us Image" class="object-cover rounded-lg shadow-md md:grayscale hover:grayscale-0 duration-200">
+      <Image src={aboutImage} alt="Quality Electric Trucks parked outside a property development" class="object-cover rounded-lg shadow-md md:grayscale hover:grayscale-0 duration-200" />
       
-      <h2 class="font-bold text-3xl text-gray-800 ">
+      <h2 title="company bio" class="font-bold text-3xl text-gray-800">
         Lighting up the Wabash Valley since 2022.
       </h2>
       <p class="text-lg leading-relaxed text-slate-700">

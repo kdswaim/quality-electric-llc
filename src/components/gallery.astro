@@ -1,3 +1,13 @@
+---
+import Image from "astro/components/Image.astro";
+import galleryOne from "@assets/gallery/galleryone.jpg";
+import galleryTwo from "@assets/gallery/gallerytwo.jpg";
+import galleryThree from "@assets/gallery/gallery3.jpg";
+import galleryFour from "@assets/gallery/gallery4.jpg";
+import galleryFive from "@assets/gallery/gallery5.jpg";
+import gallerySix from "@assets/gallery/gallery6.jpg";
+---
+
 <h2 class="font-bold text-3xl text-amber-600 pt-16 text-center font-serif">
     Setting the Standard for Quality
   </h2>
@@ -5,10 +15,10 @@
     The promise is on the package - when you call a Quality company, you can expect a high standard of workmanship, courtesy, and knowledge.
   </p>
   <div class="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 place-items-center py-16">
-    <img class="rounded-lg" src="https://1drv.ms/i/s!AoM7TSrp7nnmljhl6AUhfnY_ATPL?embed=1&width=660">
-    <img class="rounded-lg" src="https://1drv.ms/i/s!AoM7TSrp7nnmljvJT2h94UKzBhn1?embed=1&height=660">
-    <img class="rounded-lg" src="https://1drv.ms/i/s!AoM7TSrp7nnmljl6OWO-D5nwa04Y?embed=1&width=660">
-    <img class="rounded-lg" src="https://1drv.ms/i/s!AoM7TSrp7nnmljqCDw5NJxcBvXZK?embed=1&width=660">
-    <img class="rounded-lg" src="https://1drv.ms/i/s!AoM7TSrp7nnmhGKKEPiPsrQlxAPj?embed=1&width=660">
-    <img class="rounded-lg" src="https://1drv.ms/i/s!AoM7TSrp7nnmhHwnZNSvgCtzV_Q-?embed=1&width=660">
+    <Image alt="Doug and Jason rewiring a terre haute home" class="rounded-lg" src={galleryOne} />
+    <Image alt="Duggin help rough-in a new construction home in Southard Acres West, Terre Town, Terre Haute" class="rounded-lg" src={galleryTwo} />
+    <Image alt="Jason helps other electricians during a remodel" class="rounded-lg" src={galleryThree} />
+    <Image alt="Brandon and Mike reach high for a rough-in" class="rounded-lg" src={galleryFour} />
+    <Image alt="Quality Electric of Indiana LLC signage in the office on 3601 N Fruitridge Avenue" class="rounded-lg" src={galleryFive} />
+    <Image alt="Exterior shot of the Quality Building on 3601 N Fruitridge Avenue" class="rounded-lg" src={gallerySix} />
 </div>
