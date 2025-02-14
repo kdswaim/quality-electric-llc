@@ -3,7 +3,6 @@ import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import "@fontsource-variable/inter/index.css";
-import '@fontsource-variable/bricolage-grotesque';
 import "@fontsource/belleza";
 import "@fontsource/quattrocento";
 
@@ -31,14 +30,16 @@ const makeTitle = title
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/qualicon.png" />
+    <link rel="icon" sizes="any" href="/qualicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="preload" as="image" href="\assets\Dec rough-in.webp" />
+    <link rel="preload" as="image" href="/assets/Dec rough-in.webp" type="image/webp" />
 <!-- Goatcounterrrrr! -->
 <script>
   // Only load on production environment.
-  if (window.location.host !== 'production.com')
-      window.goatcounter = {no_onload: true}
+  if (window.location.hostname === "localhost") {
+  window.goatcounter = { no_onload: true };
+}
 </script>
 <script data-goatcounter="https://quality-electric.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
