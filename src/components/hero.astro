@@ -3,8 +3,9 @@ import { Picture } from "astro:assets";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 ---
+
 <section
-  class="relative bg-cover bg-center bg-no-repeat w-full md:grayscale hover:grayscale-0"
+  class="relative animate-fadeToColor bg-cover bg-center bg-no-repeat w-full md:grayscale hover:grayscale-0 transition-all duration-500"
   style="background-image: url('/assets/Dec\ rough-in.webp')"
 >
   <div
@@ -23,14 +24,14 @@ import { Icon } from "astro-icon/components";
 
       <p class="mt-4 text-left drop-shadow-sm max-w-lg text-white sm:text-xl/relaxed">
         We know some Quality professionals who would be perfect for the job.
-        They have nearly 60 years of combined industry experience, and while their courtesy and dedication could be called "old-fashioned", that means they will go above and beyond to address all your home's modern electrical needs.
+        They have nearly 50 years of combined industry experience, and while their courtesy and dedication could be called "old-fashioned", that means they will go above and beyond to address all your home's modern electrical needs.
         <br/>Choose us for your next electrical project and see why all our longtime customers refuse to settle for anything less than Quality.
       </p>
 
       <div class="mt-8 flex flex-wrap gap-4 text-center justify-center">
         <a
-          href="tel:8128728376"
-          class="block w-full rounded bg-amber-500 px-12 py-3 text-md font-medium text-white shadow hover:bg-amber-700 focus:outline-none focus:ring active:bg-amber-400 sm:w-auto"
+          href="tel:8128728375"
+          class="block w-full md:pointer-events-auto rounded bg-amber-500 px-12 py-3 text-md font-medium text-white shadow hover:bg-amber-700 focus:outline-none focus:ring active:bg-amber-400 sm:w-auto"
         >
           Call Now
         </a>
@@ -45,50 +46,3 @@ import { Icon } from "astro-icon/components";
     </div>
   </div>
 </section>
-
-<!-- <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
-    <Picture
-      src={heroImage}
-      alt="Astronaut in the air"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-    />
-  </div>
-  <div>
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
-    </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly
-      create any website with this starter.
-    </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-         Download for Free
-      </Link>
-      <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-         GitHub Repo
-      </Link>
-    </div>
-  </div>
-</main> -->

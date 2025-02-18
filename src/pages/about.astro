@@ -28,20 +28,36 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
       <Fragment slot="desc">Powered by Quality, Built on Trust.</Fragment>
     </Sectionhead>
 
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <Image loading="lazy" src={aboutImage} alt="Quality Electric Trucks parked outside a property development" class="object-cover rounded-lg shadow-md md:grayscale hover:grayscale-0 duration-200" />
-      
-      <h2 title="company bio" class="font-bold text-3xl text-gray-800">
-        Lighting up the Wabash Valley since 2022.
-      </h2>
-      <p class="text-lg leading-relaxed text-slate-700">
-        Quality Electric of Indiana LLC came about by a common and endlessly-frustrating problem - getting good electrical help. <br/>
-
-        And with a real estate development company finding rapid success and a roofing company that could cover them almost as quickly as they were built, the owner of Quality brands had a lightbulb moment: add a new company and do things differently. <br/>
-        
-        This simple strategy has worked. By putting craftsmanship and kindness over cut-corner tactics, Quality Electric has grown a loyal customer base since 2022 and would love to have your business as well.
-      </p>
+    <div class="relative flex flex-col md:flex-row-reverse gap-3 mx-auto max-w-4xl mt-16">
+      <!-- Image Container -->
+      <div class="relative w-full">
+        <Image 
+          loading="lazy" 
+          src={aboutImage} 
+          alt="Quality Electric Trucks parked outside the Southard Acres West subdivision during development." 
+          class="object-cover rounded-lg shadow-md md:grayscale hover:grayscale-0 transition-all duration-500 w-full"
+        />
+      </div>
+    
+      <!-- Text Container -->
+      <div class="bg-white bg-opacity-60 p-4 rounded-lg text-gray-800 
+                  md:absolute md:right-7 md:top-7 md:max-w-lg md:pointer-events-none">
+        <h2 title="company bio" class="font-bold text-3xl">
+          Lighting up the Wabash Valley since 2022.
+        </h2>
+        <p class="text-lg leading-relaxed pt-2 text">
+          Quality Electric of Indiana LLC came about by a common and endlessly-frustrating problem - getting good electrical help. <br/>
+          And with a real estate development company finding rapid success and a roofing company that could cover them almost as quickly as they were built, the owner of Quality brands had a lightbulb moment: add a new company and do things differently. <br/>
+          This simple strategy has worked. By putting craftsmanship and kindness over cut-corner tactics, Quality Electric has grown a loyal customer base since 2022 and would love to have your business as well.
+        </p>
+      </div>
     </div>
+    <h2 title="company bio" class="font-bold text-3xl pt-8">
+      Our Fantastic Four
+    </h2>
+    <p class="text-lg leading-relaxed pt-2 text">
+      See for yourself what makes us great: our people. We couldn't deliver quality electrician services to Terre Haute without our professionals, our customers, and our community. 
+    </p>
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
@@ -54,7 +70,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                 sizes="(max-width: 800px) 100vw, 400px"
                 width={400}
                 height={400}
-                class="md:grayscale w-full hover:grayscale-0 rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
+                class="md:grayscale w-full transition-all duration-500 hover:grayscale-0 rounded-md group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
               />
             </div>
 
@@ -71,7 +87,6 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
     <Gallery />
     <Social />
     <Logos />
-    <MeetDoug />
     <Cta />
   </Container>
 </Layout>
