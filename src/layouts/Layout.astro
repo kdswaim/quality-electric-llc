@@ -33,6 +33,8 @@ const makeTitle = title
     <link rel="icon" sizes="any" href="/qualicon.ico" />
     <link rel="apple-touch-icon" href="/qualicon.png" />
 
+  <meta name="description" content="Looking for a licensed, bonded, and insured electrician near Terre Haute? Quality Electric of Indiana offers 24/7 residential electrical services, rewires, panel upgrades, new construction wiring, generator installs, and more. Trusted electrical contractors serving the Wabash Valley since 2022. Call your local electrician today!" />
+
     <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Quality Electric of Indiana LLC - Your Terre Haute Electrician" />
 <meta name="twitter:description" content="Powered by Quality, Built on Trust. Serving the Wabash Valley since 2022..." />
@@ -53,14 +55,14 @@ const makeTitle = title
     
     <SEO
       title={makeTitle}
-      description="Powered by Quality, Built on Trust. Serving the Wabash Valley since 2022, Quality Electric of Indiana LLC brings nearly 60 years of combined experience to rewires, new construction rough-ins, exterior installations, survice upgrades, and generator installation in Terre Haute and the surrounding area. Available 24/7 for emergency electrical services. Contact us today and find out why our longtime clients refuse to settle for anything less than Quality."
+      description="Powered by Quality, Built on Trust. Whether you need an electrical contractor for a resident rewire or a whole new home, we've got you! Rewires, new construction, residential, exterior, survice upgrades, and generator installation in Terre Haute and the surrounding area. Available 24/7 for emergency electrical services. Searching for 'electricians near me' and don't know who to choose, choose Quality - we'll get the job done right!"
       canonical={canonicalURL}
       
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Quality Electric of Indiana LLC - Your Terre Haute Electrician`,
+          title: `Quality Electric of Indiana LLC - Trusted Electricians Near You in Terre`,
           image: resolvedImageWithDomain,
         },
         image: {
@@ -84,3 +86,32 @@ const makeTitle = title
     </style>
   </body>
 </html>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Quality Electric of Indiana LLC",
+  "image": "https://qualityelectricofindiana.com/opengraph.png",
+  "url": "https://qualityelectricofindiana.com",
+  "telephone": "+1-812-872-8376",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3601 N. Fruitridge Avenue",
+    "addressLocality": "Terre Haute",
+    "addressRegion": "IN",
+    "postalCode": "47805",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.506925608773116,
+    "longitude": -87.35911085725314,
+  },
+  "sameAs": [
+    "https://www.facebook.com/quality.electric.indiana/",
+    "https://www.instagram.com/qualityelectricof",
+    "https://www.tiktok.com/@quality.electric.indiana"
+  ]
+}
+</script>
